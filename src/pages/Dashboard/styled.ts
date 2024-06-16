@@ -15,11 +15,15 @@ export const Form = styled.form`
   display: flex;
 `;
 
-export const Input = styled.input`
+interface InputProps {
+  borderError: boolean;
+}
+
+export const Input = styled.input<InputProps>`
   flex: 1;
   height: 4.375rem;
   padding: 0 24px;
-  border: 2px solid #fff;
+  border: 2px solid ${props => (props.borderError ? '#c53030' : '#f5f5f5')};
   border-radius: 5px 0 0 5px;
   color: #3a3a3a;
   border-right: 0;
@@ -91,4 +95,10 @@ export const RepositoriesList = styled.section`
       margin-top: 4px;
     }
   }
+`;
+
+export const Error = styled.span`
+  display: block;
+  color: #c53030;
+  margin-top: 8px;
 `;

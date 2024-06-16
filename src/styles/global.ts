@@ -30,6 +30,14 @@ export const GlobalStyle = createGlobalStyle`
     padding: 2.5rem 1.25rem;
   }
 
+  textarea:focus, input:focus{
+    outline: none;
+  }
+
+  *:focus {
+    outline: none;
+}
+
   button{
     cursor: pointer;
   }
