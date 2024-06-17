@@ -83,10 +83,11 @@ export const Dashboard = () => {
 
       <RepositoriesList>
         {repositories.map(repository => {
-          console.log(repository.owner);
           return <RepositoryItem {...repository} key={repository.full_name} />;
         })}
       </RepositoriesList>
     </div>
   );
 };
+
+export default Dashboard;

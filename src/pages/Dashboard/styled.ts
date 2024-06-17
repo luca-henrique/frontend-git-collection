@@ -51,6 +51,10 @@ export const RepositoriesList = styled.section`
   margin-top: 80px;
   max-width: 700px;
 
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
   a {
     background: #fff;
     border-radius: 0.375rem;
@@ -68,10 +72,6 @@ export const RepositoriesList = styled.section`
       margin-left: auto;
       color: #cbcbd6;
     }
-  }
-
-  & + a {
-    margin-top: 16px;
   }
 
   img {
